@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:football_news/screens/menu.dart';
+import 'package:football_news/screens/news_entry_list.dart';
 import 'package:football_news/screens/news_list.dart';
 
 class ItemCard extends StatelessWidget {
@@ -27,13 +28,22 @@ class ItemCard extends StatelessWidget {
             );
 
             if (item.name == "Add News") {
-            // TODO: Gunakan Navigator.push untuk melakukan navigasi ke MaterialPageRoute yang mencakup NewsFormPage.
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => NewsFormPage(),
-              )
-            );
+              // TODO: Gunakan Navigator.push untuk melakukan navigasi ke MaterialPageRoute yang mencakup NewsFormPage.
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NewsFormPage(),
+                )
+              );
+            }
+
+            else if (item.name == "See Football News") {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const NewsEntryListPage()
+                  ),
+              );
           }
         },
         // Container untuk menyimpan Icon dan Text
