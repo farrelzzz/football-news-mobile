@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:football_news/screens/menu.dart';
 // TODO: Impor halaman NewsFormPage jika sudah dibuat
-import 'package:football_news/screens/news_list.dart';
+import 'package:football_news/screens/newslist_form.dart';
 import 'package:football_news/screens/news_entry_list.dart';
 
 class LeftDrawer extends StatelessWidget {
